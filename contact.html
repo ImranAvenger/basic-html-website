@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Basic HTML Website Contact Page" />
+    <meta name="keywords" content="HTML, Layouts, semantic HTML" />
+    <meta name="author" content="Al Imran" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0 20px;
+      }
+      header,
+      main,
+      footer {
+        margin-bottom: 40px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .courses-list li::before {
+        content: "- ";
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <div style="display: flex; align-items: center; gap: 10px">
+          <img
+            src="https://cdn.dribbble.com/userupload/32821810/file/original-479acdc7b33c2a19df8bca51209c9ec8.jpg"
+            alt="logo"
+            style="width: 50px; height: 50px"
+          />
+          <p>Al Imran</p>
+        </div>
+        <ul style="display: flex; list-style: none; gap: 20px">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <section style="text-align: center; margin: 50px 0">
+        <h1>Frontend Developer</h1>
+        <p>html only with proper layout, no styling</p>
+      </section>
+    </header>
+    <main>
+      <section style="display: flex; justify-content: center; gap: 20px">
+        <div>
+          <form
+            action=""
+            style="
+              display: flex;
+              flex-direction: column;
+              gap: 15px;
+              width: 300px;
+            "
+          >
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+            ></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer style="display: flex; justify-content: center; align-items: center">
+      <p>© all rights reserved 2025</p>
+    </footer>
+  </body>
+</html>
